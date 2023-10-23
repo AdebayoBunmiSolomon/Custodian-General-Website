@@ -16,7 +16,7 @@ const ImageSection: React.FunctionComponent<{}> = () => {
     <div>
       <div className='bg-red-400 h-[30rem]'>
         <img src={generalInsurance} className='w-screen h-[30rem]' />
-        <div className='flex justify-around'>
+        <div className='flex flex-row lg:flex-row md:flex-col w-[95vw] justify-around'>
           <div className='mt-[-115px] pl-[4rem]'>
             <span className=' text-5xl text-[#e8e8e8]'>General Insurance</span>
           </div>
