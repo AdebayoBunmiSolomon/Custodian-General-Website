@@ -32,12 +32,20 @@ const MainHeader: React.FunctionComponent<{}> = () => {
                 return (
                   <li
                     className='inline-block pl-3 md:pl-4 lg;pl-5 pt-9 relative'
-                    onClick={() => {
+                    onMouseEnter={() => {
                       setLink((link = hLink.children));
                       setLinkName((linkName = hLink.link));
                     }}
+                    onMouseLeave={() => {
+                      if (link) {
+                      } else if (!link && !linkName) {
+                        setLink((link = ""));
+                      }
+                    }}
                     key={index}>
-                    <a className='flex text-white hover:cursor-pointer hover:text-amber-300 text-[10px] md:text-[12px] lg:text-[14px] duration-500'>
+                    <a
+                      className='flex text-white hover:cursor-pointer hover:text-amber-300 text-[10px] md:text-[12px] lg:text-[14px] duration-500'
+                      href={hLink.href}>
                       {hLink.link}
                       {hLink.children && (
                         <MdOutlineKeyboardArrowDown size={20} />
@@ -50,24 +58,30 @@ const MainHeader: React.FunctionComponent<{}> = () => {
                             return (
                               <>
                                 <li
-                                  onClick={() => {
+                                  onMouseEnter={() => {
                                     setSubLink((subLink = childLink.children));
                                     setSubLinkName(
                                       (subLinkName = childLink.link)
                                     );
-                                    setShowList((showList = !showList));
+                                    // setShowList((showList = !showList));
+                                  }}
+                                  onMouseLeave={() => {
+                                    if (subLink) {
+                                    } else {
+                                      setSubLink((subLink = ""));
+                                    }
                                   }}
                                   key={index}
                                   className='p-3 text-[12px] border-b border-[#e8e8e8] hover:cursor-pointer hover:bg-[#e8e8e8] duration-500 relative'>
-                                  <a className='text-[#a50505] hover:text-[#a50505] flex justify-between'>
+                                  <a
+                                    className='text-[#a50505] hover:text-[#a50505] flex justify-between'
+                                    href={childLink.href}>
                                     {childLink.link}
                                     {childLink.icon}
                                   </a>
                                   {/* Sub link drop-down */}
                                   <ul className='absolute left-[13.05rem] w-[23rem] bg-white shadow-lg shadow-gray-600/25 top-0'>
-                                    {subLink &&
-                                    subLinkName === childLink.link &&
-                                    showList === true
+                                    {subLink && subLinkName === childLink.link
                                       ? subLink.map(
                                           (
                                             subChildLink: any,
@@ -92,7 +106,9 @@ const MainHeader: React.FunctionComponent<{}> = () => {
                                                 }}
                                                 key={index}
                                                 className='p-3 text-[12px] border-b border-[#e8e8e8] hover:cursor-pointer hover:bg-[#e8e8e8] duration-500  relative'>
-                                                <a className='text-[#a50505] hover:text-[#a50505] flex justify-between'>
+                                                <a
+                                                  className='text-[#a50505] hover:text-[#a50505] flex justify-between'
+                                                  href={subChildLink.href}>
                                                   {subChildLink.link}
                                                   {subChildLink.icon}
                                                 </a>

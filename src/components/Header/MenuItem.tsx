@@ -5,70 +5,46 @@ export const headerLink = [
     link: "ABOUT US",
     children: [
       {
-        link: "About us",
-      },
-      // {
-      //   link: "Subsidiaries",
-      //   icon: <MdOutlineKeyboardArrowRight size={20} />,
-      //   children: [
-      //     {
-      //       link: "Custodian And Allied Insurance Ltd",
-      //     },
-      //     {
-      //       link: "Custodian Life Assurance Ltd",
-      //     },
-      //     {
-      //       link: "Custodian Trustees Ltd",
-      //     },
-      //     {
-      //       link: "Custodian Sterling Pensions Ltd",
-      //     },
-      //     {
-      //       link: "UPDC Plc",
-      //     },
-      //   ],
-      // },
-      {
         link: "Investor relations",
         icon: <MdOutlineKeyboardArrowRight size={20} />,
         children: [
           {
             link: "Financials",
+            href: "https://custodianplc.com.ng/financials",
           },
           {
             link: "Whistle Blowing Policy",
+            href: "https://drive.google.com/file/d/10vnich1iLm-sdNQn3wOEvfiOQjlX5pVf/view?usp=sharing",
           },
-          // {
-          //   link: "Securities Trading Policy",
-          // },
           {
             link: "Stakeholder Management and Communication Policy",
+            href: "https://drive.google.com/file/d/1TyDbOqkNYEeyaOB94oFNmiNQJzxzwd0p/view",
           },
           {
             link: "Complaints Management Policy",
+            href: "https://drive.google.com/file/d/1oE8utyfuBCdjgN4-sFW1IYtRvYxV39EQ/view",
           },
           {
             link: "Notice of AGM by Proxy",
+            href: "https://drive.google.com/file/d/18Iku-hzrpPNKUlPVSvlXqGSpGqnZiPgY/view",
           },
-          // {
-          //   link: "E-Dividend Mandate Card",
-          // },
           {
             link: "Complaint Lodgement",
+            href: "https://custodianplc.com.ng/complaint-lodgement",
           },
           {
             link: "Nigeria Code of Corporate Governance",
+            href: "https://drive.google.com/file/d/1rB__SkV6NFNw5yCMWl9lnwvuEaGJ_XHl/view",
           },
           {
             link: "AGM Live Streaming",
+            href: "https://www.youtube.com/watch?v=N4EdAbNspUE&feature=youtu.be",
           },
-          // {
-          //   link: "Unclaimed Dividends List",
-          // },
         ],
       },
       {
         link: "Resource center",
+        href: "https://custodianplc.com.ng/Resource-Center",
       },
     ],
   },
@@ -81,148 +57,50 @@ export const headerLink = [
         children: [
           {
             link: "Auto Insurance",
+            href: "https://custodianplc.com.ng/car-insurance",
           },
           {
             link: "Travel Insurance",
+            href: "https://custodianplc.com.ng/travel",
           },
           {
             link: "Home Insurance",
+            href: "https://custodianplc.com.ng/home-shield",
           },
           {
             link: "Safety Plus",
+            href: "https://custodianplc.com.ng/safety-plus-plan",
           },
           {
             link: "Events Insurance",
+            href: "https://custodianplc.com.ng/events-insurance",
           },
           {
             link: "Others",
+            href: "#",
           },
         ],
       },
-      // {
-      // link: "Life Insurance Products",
-      // icon: <MdOutlineKeyboardArrowRight size={20} />,
-      // children: [
-      // {
-      //   link: "Savings & Investment",
-      //   icon: <MdOutlineKeyboardArrowRight size={20} />,
-      //   children: [
-      //     {
-      //       link: "Capital Builder",
-      //     },
-      //     {
-      //       link: "Esusu Shield",
-      //     },
-      //     {
-      //       link: "Personal Provident Plan",
-      //     },
-      //     {
-      //       link: "Investment Plus Plan",
-      //     },
-      //     {
-      //       link: "Wealth Plus Plan",
-      //     },
-      //   ],
-      // },
-      // {
-      //   link: "Endowment Policies",
-      //   icon: <MdOutlineKeyboardArrowRight size={20} />,
-      //   children: [
-      //     {
-      //       link: "Education Endowment",
-      //     },
-      //     {
-      //       link: "Life Time Harvest",
-      //     },
-      //     {
-      //       link: "Ordinary Endowment",
-      //     },
-      //   ],
-      // },
-      // {
-      //   link: "Protection",
-      //   icon: <MdOutlineKeyboardArrowRight size={20} />,
-      //   children: [
-      //     {
-      //       link: "Term Assurance",
-      //     },
-      //     {
-      //       link: "Whole Life Assurance",
-      //     },
-      //     {
-      //       link: "Dignity Plan",
-      //     },
-      //     {
-      //       link: "Tuition Protection",
-      //     },
-      //     {
-      //       link: "Critical Illness Cover",
-      //     },
-      //   ],
-      // },
-      // {
-      //   link: "Annuities",
-      //   icon: <MdOutlineKeyboardArrowRight size={20} />,
-      //   children: [
-      //     {
-      //       link: "Deferred Anuity",
-      //     },
-      //     {
-      //       link: "Immediate Anuity",
-      //     },
-      //     {
-      //       link: "Retiree Life Anuity",
-      //     },
-      //   ],
-      // },
-      // {
-      //   link: "Corporate",
-      //   icon: <MdOutlineKeyboardArrowRight size={20} />,
-      //   children: [
-      //     {
-      //       link: "Group Credit Life",
-      //     },
-      //     {
-      //       link: "Group Life",
-      //     },
-      //   ],
-      // },
-      // {
-      //   link: "Others",
-      // },
-      // ],
-      // },
-      {
-        link: "Trustees",
-      },
-      {
-        link: "Pensions",
-      },
-      {
-        link: "Real Estate",
-      },
     ],
   },
-  // {
-  //   link: "KEY MOMENTS",
-  // },
   {
     link: "CAREERS",
+    href: "#",
   },
-  // {
-  //   link: "CSR",
-  // },
   {
     link: "CLAIM",
+    href: "https://custodianplc.com.ng/claim",
   },
   {
     link: "CONTACT",
     children: [
       {
         link: "Contact us",
+        href: "https://custodianplc.com.ng/contacts",
       },
       {
         link: "Our Branches",
+        href: "https://custodianplc.com.ng/branches",
       },
     ],
   },

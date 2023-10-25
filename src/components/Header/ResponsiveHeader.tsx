@@ -53,7 +53,9 @@ const ResponsiveHeader: React.FunctionComponent<{}> = () => {
                           // console.log(link, " ", linkName);
                         }}
                         key={index}>
-                        <a className='flex justify-center text-white hover:cursor-pointer hover:text-amber-300 text-[12px] md:text-[12px] lg:text-[14px] duration-500 pb-3'>
+                        <a
+                          className='flex justify-center text-white hover:cursor-pointer hover:text-amber-300 text-[12px] md:text-[12px] lg:text-[14px] duration-500 pb-3'
+                          href={hLink.href}>
                           {hLink.link}
                           {hLink.children && (
                             <MdOutlineKeyboardArrowDown size={20} />
@@ -78,7 +80,9 @@ const ResponsiveHeader: React.FunctionComponent<{}> = () => {
                                       }}
                                       key={index}
                                       className='p-3 text-[12px] hover:cursor-pointer hover:bg-[#e8e8e8] duration-500'>
-                                      <a className='text-[#e8e8e8] hover:text-[#a50505] flex justify-center'>
+                                      <a
+                                        className='text-[#e8e8e8] hover:text-[#a50505] flex justify-center'
+                                        href={childLink.href}>
                                         {childLink.link}
                                         {childLink.icon}
                                       </a>
@@ -111,7 +115,9 @@ const ResponsiveHeader: React.FunctionComponent<{}> = () => {
                                                     }}
                                                     key={index}
                                                     className='p-3 text-[12px] hover:cursor-pointer hover:bg-[#e8e8e8] duration-500'>
-                                                    <a className='text-[#e8e8e8] hover:text-[#a50505] flex justify-center'>
+                                                    <a
+                                                      className='text-[#e8e8e8] hover:text-[#a50505] flex justify-center'
+                                                      href={subChildLink.href}>
                                                       {subChildLink.link}
                                                       {subChildLink.icon}
                                                     </a>

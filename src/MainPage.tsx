@@ -1,6 +1,9 @@
 import React from "react";
 import Header from "./components/Header";
 import ImageSection from "./components/ImageSection";
+import AboutUs from "./components/Sections/AboutUs";
+import Vision from "./components/Sections/Vision";
+import BoardMgt from "./components/Sections/BoardMgt";
 
 const MainPage: React.FunctionComponent<{}> = () => {
   return (
@@ -12,26 +15,14 @@ const MainPage: React.FunctionComponent<{}> = () => {
         <Header />
         <ImageSection />
       </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur omnis
-        vero magnam, quod, hic fuga nihil cupiditate iste architecto porro
-        debitis, tenetur voluptates suscipit deserunt quia quaerat eaque ullam
-        corrupti! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Pariatur omnis vero magnam, quod, hic fuga nihil cupiditate iste
-        architecto porro debitis, tenetur voluptates suscipit deserunt quia
-        quaerat eaque ullam corrupti!Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Pariatur omnis vero magnam, quod, hic fuga nihil
-        cupiditate iste architecto porro debitis, tenetur voluptates suscipit
-        deserunt quia quaerat eaque ullam corrupti!Lorem ipsum dolor sit amet
-        consectetur, adipisicing elit. Pariatur omnis vero magnam, quod, hic
-        fuga nihil cupiditate iste architecto porro debitis, tenetur voluptates
-        suscipit deserunt quia quaerat eaque ullam corrupti!Lorem ipsum dolor
-        sit amet consectetur, adipisicing elit. Pariatur omnis vero magnam,
-        quod, hic fuga nihil cupiditate iste architecto porro debitis, tenetur
-        voluptates suscipit deserunt quia quaerat eaque ullam corrupti!Lorem
-        ipsum dolor sit amet consectetur, adipisicing elit. Pariatur omnis vero
-        magnam, quod, hic fuga nihil cupiditate iste architecto porro debitis,
-        tenetur voluptates suscipit deserunt quia quaerat eaque ullam corrupti!
+      <div className='mt-5'>
+        <AboutUs />
+      </div>
+      <div className='mt-5'>
+        <Vision />
+      </div>
+      <div className='mt-8'>
+        <BoardMgt />
       </div>
     </>
   );
