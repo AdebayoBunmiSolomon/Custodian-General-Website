@@ -13,11 +13,11 @@ const MainHeader: React.FunctionComponent<{}> = () => {
   let [subLinkName, setSubLinkName] = useState<any>();
   let [subSubLink, setSubSubLink] = useState<any>();
   let [subSubLinkName, setSubSubLinkName] = useState<any>();
-  let [showList, setShowList] = useState<boolean>(false);
+  let [showDiv, setShowDiv] = useState<boolean>(false);
   return (
     <>
       <header
-        className={`top-0 left-0 right-0 w-full fixed h-[90px] lg:h-[90px] md:h-[90px] bg-[#a50505]`}>
+        className={`top-0 left-0 right-0 w-full fixed h-[90px] lg:h-[90px] md:h-[90px] bg-[#a50505] z-10`}>
         <div className='flex flex-row justify-around'>
           {/* nav links */}
           <div className='pt-3'>
@@ -35,12 +35,7 @@ const MainHeader: React.FunctionComponent<{}> = () => {
                     onMouseEnter={() => {
                       setLink((link = hLink.children));
                       setLinkName((linkName = hLink.link));
-                    }}
-                    onMouseLeave={() => {
-                      if (link) {
-                      } else if (!link && !linkName) {
-                        setLink((link = ""));
-                      }
+                      setShowDiv(true);
                     }}
                     key={index}>
                     <a
@@ -176,6 +171,19 @@ const MainHeader: React.FunctionComponent<{}> = () => {
             </div>
           </div>
         </div>
+        {showDiv === true && link ? (
+          <div
+            className='w-screen h-screen'
+            onClick={() => {
+              setLink("");
+              setLinkName("");
+              setSubLink("");
+              setSubLinkName("");
+              setSubSubLink("");
+              setSubSubLinkName("");
+              setShowDiv(!showDiv);
+            }}></div>
+        ) : null}
       </header>
     </>
   );

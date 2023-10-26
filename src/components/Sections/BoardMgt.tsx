@@ -132,7 +132,7 @@ const BoardMgt: React.FunctionComponent<{}> = () => {
                       <ul>
                         <li
                           key={index}
-                          className='flex pt-4 border-b pb-3 text-sm text-[#444444] hover:cursor-pointer'>
+                          className='relative flex pt-4 border-b pb-3 text-sm text-[#444444] hover:cursor-pointer'>
                           {mgtList.icon}
                           <span className='font-[350]'>
                             {mgtList.name}&nbsp;&nbsp;&nbsp;&nbsp;
