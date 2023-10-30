@@ -159,7 +159,7 @@ const BusinessCover: React.FunctionComponent<{}> = () => {
             </span>
           </div>
         </div>
-        <div className='flex flex-col space-y-10 w-[90%] md:w-[90%] lg:w-[85%] md:flex-col md:items-center md:space-y-10 lg:flex-row lg:justify-around lg:space-x-10'>
+        <div className='flex flex-col w-[90%] md:w-[90%] md:flex md:flex-col lg:w-[85%] lg:flex lg:flex-row lg:justify-around'>
           <div className='w-[98%] md:w-[90%] lg:[45%] border-r-[1px] border-b-2 hover:shadow-2xl hover:shadow-gray-600/25'>
             {businessCover.map((busCover, index) => {
               return (
@@ -179,7 +179,7 @@ const BusinessCover: React.FunctionComponent<{}> = () => {
               );
             })}
           </div>
-          <div className='w-[98%] md:w-[90%] lg:[45%] border-r-[1px] border-b-2 hover:shadow-2xl hover:shadow-gray-600/25'>
+          <div className='w-[98%] mt-20 md:w-[90%] md:mt-20 lg:[45%] lg:mt-0 border-r-[1px] border-b-2 hover:shadow-2xl hover:shadow-gray-600/25'>
             {businessCover.map((busCover, index) => {
               return (
                 <div key={index} className='pb-5 pl-5 md:pl-6 lg:pl-7 pt-14'>
