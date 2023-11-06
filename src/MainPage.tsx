@@ -5,7 +5,7 @@ import AboutUs from "./components/Sections/AboutUs";
 import Vision from "./components/Sections/Vision";
 import BoardMgt from "./components/Sections/BoardMgt";
 import OurStyle from "./components/Sections/OurStyle";
-import BusinessCover from "./components/Sections/BusinessCover";
+import BusinessCover from "./components/Sections/BusinessCover/BusinessCover";
 
 const MainPage: React.FunctionComponent<{}> = () => {
   return (
@@ -31,13 +31,6 @@ const MainPage: React.FunctionComponent<{}> = () => {
       </div>
       <div>
         <BusinessCover />
-      </div>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ad id
-          iure a, dolores repellat sequi nihil nostrum commodi et tenetur
-          laboriosam, officiis libero optio. Quidem enim sunt blanditiis unde!
-        </p>
       </div>
     </>
   );
